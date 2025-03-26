@@ -29,9 +29,33 @@
 		060956792D8BF283009402DB /* EventBookingApp-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EventBookingApp-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		06A87C402D8C09A000F84578 /* Exceptions for "EventBookingApp-SwiftUI" folder in "EventBookingApp-SwiftUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0609565E2D8BF280009402DB /* EventBookingApp-SwiftUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		06A87C3E2D8C08DB00F84578 /* Exceptions for "EventBookingApp-SwiftUI" folder in "Compile Sources" phase from "EventBookingApp-SwiftUI" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 0609565B2D8BF280009402DB /* Sources */;
+			membershipExceptions = (
+				"Fonts/Arvo-Bold.ttf",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		060956612D8BF280009402DB /* EventBookingApp-SwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				06A87C402D8C09A000F84578 /* Exceptions for "EventBookingApp-SwiftUI" folder in "EventBookingApp-SwiftUI" target */,
+				06A87C3E2D8C08DB00F84578 /* Exceptions for "EventBookingApp-SwiftUI" folder in "Compile Sources" phase from "EventBookingApp-SwiftUI" target */,
+			);
 			path = "EventBookingApp-SwiftUI";
 			sourceTree = "<group>";
 		};
@@ -398,6 +422,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EventBookingApp-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EventBookingApp-SwiftUI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +452,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EventBookingApp-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EventBookingApp-SwiftUI/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct BookingDetails: View {
+    @ObservedObject var bookingManager = BookingManager.shared
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            ZStack {
+                Color(hex: "#d7ebec").ignoresSafeArea(.all)
+                
+                if bookingManager.bookings.isEmpty {
+                    VStack {
+                        Text("No bookings available.")
+                            .font(.custom("Arvo-Bold", size: 18))
+                            .foregroundColor(.gray)
+                    }
+                } else {
+                    ScrollView {
+                        VStack(spacing: 12) {
+                            ForEach(bookingManager.bookings) { bookingevent in
+                                BookingCard(bookingevents: bookingevent)
+                            }
+                        }
+                        .padding(.vertical)
+                    }
+                }
+            }
+            .navigationTitle("Booking Details")
+        }
+        
+        
     }
 }
 

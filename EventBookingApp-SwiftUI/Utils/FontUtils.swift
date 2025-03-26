@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class FontUtils {
+    
+    static let arvobold : String = "Arvo-Bold.ttf"
+}

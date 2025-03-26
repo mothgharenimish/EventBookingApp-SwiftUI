@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class IncretDecret : ObservableObject {
+    
+    @Published var count : Int = 0
+}

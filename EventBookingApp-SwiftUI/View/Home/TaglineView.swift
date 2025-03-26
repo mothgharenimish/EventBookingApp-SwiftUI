@@ -9,7 +9,14 @@ import SwiftUI
 
 struct TaglineView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Text("Explore the \nVarious ")
+            .font(.custom("Arvo-Bold", size: 38))
+            .foregroundColor(.black)
+            + Text("Events")
+            .font(.custom("Arvo-Bold", size: 38))
+            .fontWeight(.bold)
+            .foregroundColor(.black)
     }
 }
 

@@ -12,8 +12,6 @@ struct EventDetails: View {
     var events : Events
     @Environment(\.presentationMode) var presentationMode
     var bookingEvents: [BookingEvent] = []
-
-
     
     @State private var showAlert = false
     @State private var name: String = ""
@@ -22,6 +20,7 @@ struct EventDetails: View {
     var body: some View {
         
         NavigationView {
+            
             ZStack {
                 
                 Color(hex: "#d7ebec").ignoresSafeArea(.all)
@@ -270,8 +269,14 @@ struct EventDetails: View {
                 
             }
             .edgesIgnoringSafeArea(.all)
+            
+            
+            
         }
         .navigationBarBackButtonHidden(true)
+        
+        
+        
 
         
     }

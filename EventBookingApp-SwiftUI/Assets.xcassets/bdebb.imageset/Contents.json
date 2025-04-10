@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "front-view-young-male-with-guitar-holding-bank-card-red-wall-live-color-performance-musician-concert-money.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

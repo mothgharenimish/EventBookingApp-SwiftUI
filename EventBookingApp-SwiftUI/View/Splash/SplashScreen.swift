@@ -62,7 +62,7 @@ struct SplashScreen: View {
                 
                     .onAppear() {
                         
-                        withAnimation(.easeInOut(duration: 3.0)) {
+                        withAnimation(.easeInOut(duration: 2.0)) {
                             animatedString = true
                         }
                     }

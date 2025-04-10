@@ -17,6 +17,10 @@ struct EventDetails: View {
     @State private var name: String = ""
     @State private var email: String = ""
     @State private var phone: String = ""
+    @State private var toastMessage: String? = nil
+    @State private var isshowingCongrats = false
+
+
     var body: some View {
         
         NavigationView {
@@ -183,9 +187,9 @@ struct EventDetails: View {
                                             .cornerRadius(15)
                                     }
                                     else {
-                                        Text("\(events.eventsPrice * seatquantity.count)")
+                                        Text("Rs \(events.eventsPrice * seatquantity.count)")
                                             .foregroundColor(.white)
-                                            .font(.system(size: 16, weight: .semibold))
+                                            .font(.system(size: 16,weight: .semibold))
                                             .frame(maxWidth: .infinity, minHeight: 52)
                                             .background(.black)
                                             .cornerRadius(15)
@@ -243,6 +247,8 @@ struct EventDetails: View {
                                
                                // ✅ Use the singleton to add booking
                                BookingManager.shared.addBooking(booking)
+                            
+                            isshowingCongrats = true
                                
                                showAlert = false
                         }
@@ -264,6 +270,16 @@ struct EventDetails: View {
                     .cornerRadius(16)
                     .frame(maxWidth: 350)
                     .shadow(radius: 20)
+                }
+                
+                if isshowingCongrats {
+                    
+                    CustomCongratsAlert(okaction: {
+                        self.presentationMode.wrappedValue.dismiss()
+
+                        
+                    })
+                    
                 }
                 
                 

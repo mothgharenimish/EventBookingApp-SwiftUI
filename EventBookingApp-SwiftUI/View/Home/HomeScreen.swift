@@ -22,6 +22,10 @@ struct HomeScreen: View {
             return concertEvents
         case "Comedy Show":
             return ComedyEvents
+        case "Circus":
+            return CircusEvents
+        case "WorkShop":
+            return WorkShoopEvents
         default:
             return []
         }
@@ -86,7 +90,7 @@ struct HomeScreen: View {
                         LazyVStack {
                             if filteredEvents.isEmpty {
                                 Text("No events found.")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.black)
                                     .padding()
                             } else {
                                 ForEach(filteredEvents) { event in
